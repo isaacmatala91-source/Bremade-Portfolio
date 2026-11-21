@@ -1,5 +1,5 @@
 
-# BREMADE®
+# BREMADE
 ### Zambia's Creative Department.
 
 **Ideas. Strategy. Creativity. Execution.**
