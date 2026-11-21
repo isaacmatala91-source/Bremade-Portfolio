@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bremade | Zambia's Creative Department</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+  <div class="app-shell">
+    <!-- Slide-over Sidebar Drawer -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-header">
+        <div class="brand-left">
+          <div class="logo-mark">B</div>
+          <span class="brand-name">BREMADE</span>
+        </div>
+        <button id="sidebar-close" class="icon-btn" aria-label="Close Menu">✕</button>
+      </div>
+
+      <nav class="nav-group">
+        <p class="nav-label">SECTIONS</p>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <nav class="nav-group">
+        <p class="nav-label">FILTER WORK</p>
+        <button class="nav-btn active" data-filter="all">All Projects</button>
+        <button class="nav-btn" data-filter="branding">Brand Identity</button>
+        <button class="nav-btn" data-filter="product">Product & Packaging</button>
+        <button class="nav-btn" data-filter="social">Social & Print</button>
+      </nav>
+
+      <div class="sidebar-cta-group">
+        <a href="#contact" class="cta-btn sidebar-hire-btn">Hire Bremade</a>
+      </div>
+
+      <div class="sidebar-footer">
+        <button id="theme-toggle" class="sidebar-theme-btn" aria-label="Toggle Theme">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M4.93 19.07l1.41-1.41"></path><path d="M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <span id="theme-text">Dark Mode</span>
+        </button>
+        <div class="sidebar-status">
+          <span class="status-dot"></span> Available for work
+        </div>
+      </div>
+    </aside>
+
+    <!-- Backdrop Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Main Single-Column Editorial Workspace -->
+    <main class="workspace">
+      <!-- Top Bar: Brand Logo Slot on Left, Menu Icon on Right -->
+      <header class="topbar">
+        <a href="#home" class="topbar-brand">
+          <div class="topbar-logo-slot">
+            <img id="brand-logo-img" src="images/bremade%20logo.png" alt="Bremade Logo" />
+          </div>
+          <span class="topbar-studio-name">Bremade</span>
+        </a>
+
+        <button id="menu-toggle" class="icon-btn" aria-label="Open Menu">☰</button>
+      </header>
+
+      <!-- 1. HOME -->
+      <section class="hero-section" id="home">
+        <h1 class="hero-title">ZAMBIA'S CREATIVE DEPARTMENT.</h1>
+        <p class="hero-lead">
+          We've got your ideas covered. From distinctive brand identities and packaging to high-impact visual campaigns, Bremade helps businesses and creators turn concepts into clear, memorable design work.
+        </p>
+        <a href="#contact" class="inline-action-link">
+          Start a project with Bremade <span>&rsaquo;</span>
+        </a>
+      </section>
+
+      <!-- 2. WORK -->
+      <section class="content-section" id="work">
+        <div class="section-head">
+          <h2>Selected Work</h2>
+          <p>Tap any project to inspect it up close.</p>
+        </div>
+        <div class="gallery-grid" id="portfolio-grid"></div>
+      </section>
+
+      <!-- 3. SERVICES -->
+      <section class="content-section" id="services">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Focused design packages built for clarity, consistency, and growth.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="badge">01 / IDENTITY</span>
+            <h3>Logo & Monogram Design</h3>
+            <p>Custom logos and monograms crafted to stay sharp across print and digital screens.</p>
+            <ul class="service-list">
+              <li>Original concepts & refinements</li>
+              <li>High-resolution & vector deliverables</li>
+              <li>Core colors & typography notes</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="badge">02 / SYSTEM</span>
+            <h3>Full Brand Identity</h3>
+            <p>A cohesive visual foundation so your brand looks intentional from day one.</p>
+            <ul class="service-list">
+              <li>Primary mark & supporting marks</li>
+              <li>Brand visual guidelines</li>
+              <li>Stationery & presentation mockups</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="badge">03 / CAMPAIGNS</span>
+            <h3>Flyers & Social Media Kits</h3>
+            <p>Clean, high-contrast promotional graphics for launches, events, and feeds.</p>
+            <ul class="service-list">
+              <li>Event & campaign posters</li>
+              <li>Social post & story layouts</li>
+              <li>Ready-to-publish formats</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="badge">04 / COMMERCIAL</span>
+            <h3>Product & Packaging Visuals</h3>
+            <p>Thoughtful packaging layouts and clean product visuals built to stand out.</p>
+            <ul class="service-list">
+              <li>Packaging & label concepts</li>
+              <li>Studio-style product mockups</li>
+              <li>Promotional & catalog visuals</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. ABOUT -->
+      <section class="content-section" id="about">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Based in the Copperbelt. Connected to Lusaka. Creating for Zambia.</p>
+        </div>
+        <div class="about-block">
+          <span class="badge">ABOUT BREMADE</span>
+          <h3>Creativity Has No Borders.</h3>
+          <p style="margin-bottom: 0.9rem;">
+            BREMADE is a Zambia-based multidisciplinary creative agency with roots in the Copperbelt, operating from Kitwe and Ndola while extending its creative services to Lusaka and beyond.
+          </p>
+          <p style="margin-bottom: 0.9rem;">
+            We believe great creativity shouldn't be limited by location. Whether you're a growing business in Kitwe, an established brand in Ndola, or a company in Lusaka, we're ready to bring your ideas to life.
+          </p>
+          <p style="margin-bottom: 1.1rem;">
+            Through branding, graphic design, brand management, digital marketing, advertising, videography, and creative direction, we help businesses build their presence, connect with audiences, and stand out in an increasingly competitive world.
+          </p>
+          <div style="padding-top: 0.9rem; border-top: 1px solid var(--border-subtle);">
+            <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.2rem;">
+              Based in the Copperbelt. Connected to Lusaka. Creating for Zambia.
+            </p>
+            <p style="font-size: 0.88rem; font-weight: 600; color: var(--accent);">
+              BREMADE — Zambia's Creative Department.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. CONTACT -->
+      <section class="content-section" id="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Send a project brief directly to WhatsApp or Email.</p>
+        </div>
+
+        <div class="brief-card">
+          <div class="brief-grid">
+            <div>
+              <label for="service-select" class="field-label">Service</label>
+              <select id="service-select" class="studio-select">
+                <option value="Logo & Monogram Design">Logo & Monogram Design</option>
+                <option value="Full Brand Identity">Full Brand Identity</option>
+                <option value="Flyers & Social Media Kit">Flyers & Social Media Kit</option>
+                <option value="Product & Packaging Visuals">Product & Packaging Visuals</option>
+                <option value="Custom Design Request">Custom Design Request</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="client-name" class="field-label">Your Name / Brand</label>
+              <input type="text" id="client-name" class="studio-input" placeholder="Enter your name or brand" />
+            </div>
+          </div>
+
+          <div>
+            <label for="project-brief" class="field-label">Project Brief</label>
+            <textarea id="project-brief" class="studio-textarea" rows="3" placeholder="Tell us what you're building and what you need..."></textarea>
+          </div>
+
+          <div class="brief-actions">
+            <button type="button" id="send-whatsapp" class="cta-btn">Send via WhatsApp</button>
+            <button type="button" id="send-email" class="secondary-btn">Send via Email</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STUDIO FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-logo-text">Bremade</span>
+            <p class="footer-tagline">Zambia's creative department — visual identity, packaging, and campaign design.</p>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-direct">
+            <a href="https://wa.me/260760503672" target="_blank" rel="noopener noreferrer">WhatsApp: +260 760 503 672</a>
+            <span class="footer-sep">&bull;</span>
+            <a href="mailto:Bremadeatelier91@gmail.com">Bremadeatelier91@gmail.com</a>
+          </div>
+          <p class="footer-copy">&copy; 2026 Bremade. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <button class="close-modal" id="close-modal" aria-label="Close Preview">✕</button>
+      <img id="modal-img" src="" alt="Project Preview" />
+      <div class="modal-info">
+        <span class="badge" id="modal-category"></span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+</body>
+</html>
